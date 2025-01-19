@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsive flex</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="lo.png">
+
+  <style>
+    .container{
+      display: flex;
+      gap:20px;
+    }
+    .box{
+      background-color: slateblue;
+      padding:20px;
+      border-radius: 20px;
+    }
+    .item{
+      width:200px;
+      height:100px;
+      background-color: rgb(43, 226, 217);
+      border:2px solid tomato;
+    }
+    .container-2{
+      display: flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    @media screen and (max-width: 576px) {/* 576 ba er kom jpkhon hobe tokon coloumn kaj korbe*/
+      .container{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Flexbox</h2>
+  <div class="container">
+    <div class="box">
+      <h3>first box</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores facilis voluptatem, alias eaque dicta eveniet perspiciatis omnis debitis error incidunt, dolorem facere iure impedit animi assumenda ea fuga eius tempora quidem odio sint. Repellat id temporibus optio eos ullam?</p>
+    </div>
+    <div class="box">
+      <h3>first box</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores facilis voluptatem, alias eaque dicta eveniet perspiciatis omnis debitis error incidunt, dolorem facere iure impedit animi assumenda ea fuga eius tempora quidem odio sint. Repellat id temporibus optio eos ullam?</p>
+    </div>
+  </div>
+  <div class="container-2">
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+  <div class="item">item-1</div>
+</div>
+</body>
+</html>
+
