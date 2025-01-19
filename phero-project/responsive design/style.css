@@ -1,0 +1,21 @@
+
+.box-1,.box-2{
+  display: flex;
+  margin-bottom: 20px;
+
+}
+img{
+  width:200px;
+}
+
+button{
+  background-color: blueviolet;
+  color: azure;
+}
+
+ .box-1{
+  background-color: antiquewhite;
+}
+.box-2{
+  background-color:cadetblue;
+}
