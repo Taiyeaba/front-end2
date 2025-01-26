@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="lo.png">
+  <style>
+      .text-light-gray{
+      color: #727272;
+      }
+      .sponser-info{
+        max-width: 540px;
+        margin:50px auto;
+        text-align: center;
+      }
+      .sponser-image{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+
+      }
+      .sponser-image img{
+        filter:grayscale(100%);//for colourful gray clr
+      }
+      /*small size devise*/
+      @media screen and (max-width:576px){
+        .sponser-image{
+          grid-template-columns: 1fr;
+          justify-items: center;
+          gap: 50px;
+        }
+      }
+      /*medium size devise*/
+      @media screen and (min-width:576px) and (max-width:992px){
+        .sponser-image{
+       grid-template-columns:repeat(3, 1fr);
+       gap:40px;
+        }
+      }
+   </style>
+
+
+</head>
+<body>
+  <section class="our-sponsers">
+    <div class="sponser-info">
+     <h3 class="section-titile"> Our Sponspors</h3> 
+   <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but 
+    the majority have suffered alteration</p>
+    </div>
+
+    <div class="sponser-image">
+      <img src="sponsors/amazon.png" alt="">
+      <img src="sponsors/figma.png" alt="">
+      <img src="sponsors/google.png" alt="">
+      <img src="sponsors/spotify.png" alt="">
+      <img src="sponsors/telerama.png" alt="">
+    </div>
+  
+
+
+  </section>
+</body>
+</html>
+
