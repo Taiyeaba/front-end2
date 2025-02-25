@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- version 5 cdn daisi ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- css link -->
+  <link rel="stylesheet" href="style.css">
+<!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisi ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-slate-500">
+  <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+    <header>
+      <nav class="flex justify-center items-center mt-6">
+        <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+          <img class="w-48 absolute" src="Rectangle 1.png" alt="">
+          <img class="w-16" src="Group.png" alt="">
+        </div>
+      </nav>
+     </header>
+      <!-- login section -->
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+        
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account number</label>
+                <input value="01301301302" id="Account-number" type="number" class="input" placeholder="Type your number" required/>
+                <label class="fieldset-label">PIN</label>
+                <input value="1234" id="pin" type="text" class="input" placeholder="Type your pin" required />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login-btn" class="btn btn-neutral mt-4 bg-black text-white">Login</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+ 
+
+  <script src="javaScript.js"></script>
+  
+</body>
+</html>
