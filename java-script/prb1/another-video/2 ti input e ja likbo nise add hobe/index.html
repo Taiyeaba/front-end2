@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <!--tailwind link cdn-->
+  <script src="https://cdn.tailwindcss.com"></script>
+<body>
+  <section class="mt-12 ml-12">
+    <input id="product-Name" type="text" placeholder="Product Name" 
+           class="border p-1  mr-2">
+    <input id="product-Quantity" type="text" placeholder="Product Quantity" 
+           class="border p-1">
+  </section>
+
+<ul id="product-Container"  class="ml-20 mt-10"></ul>
+
+  <button onclick="handleAddtoCart()" class="py-2 px-3 mx-9 bg-blue-100 rounded-2xl mt-9">Add</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
